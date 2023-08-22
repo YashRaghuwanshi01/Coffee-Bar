@@ -1,0 +1,399 @@
+body.bg {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(135deg, #FFC7AF 0%, #FF3D68 100%);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.container {
+    background: #ffffffdd; /* slight transparency */
+    padding: 25px;
+    border-radius: 15px;
+    width: 80%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+.title {
+    color: #FF3D68;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s both;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.coffee-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.label {
+    margin-right: 10px;
+    color: #333;
+}
+
+.select {
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+/* ... (the other styles remain unchanged) ... */
+
+.select {
+    padding: 8px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid #FF3D68;
+    appearance: none;
+    outline: none;
+    background-color: white;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 140 140" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg"><g fill="%23FF3D68"><path d="M70 88L36.9 54.7c-4.4-5.3-.5-13.3 6.6-13.3h65.1c7.1 0 11.1 8 6.6 13.3L70 88z"></path></g></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.5em center;
+    background-size: 2.5%;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.select:focus {
+    border-color: #FF1744;
+    box-shadow: 0 0 10px rgba(255, 23, 68, 0.5);
+}
+
+.select:hover {
+    border-color: #FF1744;
+}
+/* ... (other styles remain unchanged) ... */
+
+.coffee-table {
+    width: 100%;
+    max-width: 600px; /* limit the width for better readability */
+    border-collapse: collapse;
+    margin: 20px auto; /* centers the table horizontally */
+    animation: fadeIn 1s both 0.5s;
+    overflow: hidden; /* to support rounded corners for inner elements */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #FF3D68;
+    border-radius: 10px; /* rounded corners */
+}
+
+.coffee-table th, .coffee-table td {
+    border: 1px solid #FFC7AF; /* lighter border color for inner cells */
+    padding: 12px 15px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.coffee-table th {
+    background-color: #FF3D68;
+    color: #fff;
+    position: relative;
+}
+
+.coffee-table th::after { /* adds a subtle gradient to the table headers */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    pointer-events: none;
+}
+
+.coffee-table tr:hover {
+    background-color: rgba(255, 59, 104, 0.1); /* subtle hover effect */
+}
+
+.coffee-table tbody tr:nth-child(odd) {
+    background-color: #fffaf4; /* alternate row color for better readability */
+}
+
+
+
+.select:focus {
+    border-color: #FF3D68;
+}
+
+.btn {
+    padding: 7px 15px;
+    background-color: #FF3D68;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #FF1744;
+    transform: translateY(-3px);
+}
+
+.coffee-table {
+    width: 100%;
+    border-collapse: collapse;
+    animation: fadeIn 1s both 0.5s; /* delay to ensure the title animates first */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.coffee-table th, .coffee-table td {
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.coffee-table th {
+    background-color: #FF3D68;
+    color: #fff;
+}
+
+.coffee-table tr:hover {
+    background-color: #FFC7AF;
+}
+body.bg {
+    /* ... (other styles) ... */
+    background-image: radial-gradient(circle at center, #FF9AA2, #FF3D68, #8C1B6A), url('path_to_your_pattern_image.png');
+    background-blend-mode: multiply;
+}
+@keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+body.bg {
+    /* ... (other styles) ... */
+    background-image: linear-gradient(45deg, #FF9AA2, #FF3D68, #8C1B6A, #FF9AA2, #FF3D68);
+    background-size: 200% 200%;
+    animation: animatedBackground 10s infinite;
+}
+/* ... (rest of the styles) ... */
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.label {
+    margin-right: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.select {
+    flex: 1; /* allows the select to take up remaining space in the form group */
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid #FF3D68;
+    appearance: none;
+    background-color: white;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 140 140" width="1em" height="1em" xmlns="http://www.w3.org/2000/svg"><g fill="%23FF3D68"><path d="M70 88L36.9 54.7c-4.4-5.3-.5-13.3 6.6-13.3h65.1c7.1 0 11.1 8 6.6 13.3L70 88z"></path></g></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.5em center;
+    background-size: 2.5%;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.btn {
+    display: block; /* make the button full width */
+    margin: 15px 0;
+    padding: 10px;
+    width: 100%;
+    /* ... (rest of the button styles) ... */
+}
+/* Existing CSS remains unchanged ... */
+
+body.bg {
+    /* ... existing styles ... */
+    font-family: 'Roboto', sans-serif;  /* Set default font for the body */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px; /* Space below the header */
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    color: #FF3D68;
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+/* ... (Previous CSS remains unchanged) ... */
+
+body.bg {
+    /* ... existing styles ... */
+    font-family: 'Roboto', sans-serif;  /* Set default font for the body */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px; /* Space below the header */
+}
+
+.logo {
+    
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    color: #FF3D68;
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* ... (Previous CSS remains unchanged) ... */
+
+body.bg {
+    /* ... existing styles ... */
+    font-family: 'Roboto', sans-serif;  /* Set default font for the body */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px; /* Space below the header */
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    color: #FF3D68;
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+/* ... (Previous CSS remains unchanged) ... */
+
+.container {
+    /* ... existing styles ... */
+    padding: 40px 25px; /* Increase padding for more space */
+    text-align: center; /* Center all the child elements */
+}
+
+.coffee-form {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally since flex direction is column */
+    gap: 20px; /* Spacing between child elements */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally since flex direction is column */
+    width: 100%; /* Take full width of the parent */
+    max-width: 300px; /* Limit the width for better aesthetics */
+    gap: 10px; /* Spacing between child elements */
+}
+
+.label {
+    align-self: flex-start; /* Align the label to the start */
+}
+
+.select {
+    width: 100%; /* Make the dropdown take the full width of the form-group */
+}
+
+.btn {
+    width: 100%; /* Make the button take the full width of the form-group */
+    max-width: 300px; /* Limit the width for better aesthetics */
+}
+
+.coffee-table {
+    margin-top: 40px; /* Add some space above the table */
+}
+/* ... (Existing CSS remains unchanged) ... */
+
+/* Flexbox for .container to rearrange its children on smaller screens */
+.container {
+    /* ... existing styles ... */
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensure Logo does not hide and remains visible across screen sizes */
+.logo {
+    /* ... existing styles ... */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 90vw; /* 90% of viewport width */
+}
+
+/* Media Query for Tablets and Smaller Desktops */
+@media (max-width: 1024px) {
+    .coffee-form {
+        width: 80%;
+    }
+
+    .form-group, .btn, .select {
+        max-width: 100%;
+    }
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .coffee-form {
+        width: 90%;
+    }
+    
+    .coffee-table, .coffee-table th, .coffee-table td {
+        font-size: 0.8em; /* reduce font size for better table fit on smaller screens */
+    }
+}

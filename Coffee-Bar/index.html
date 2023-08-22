@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Bar Selection</title>
+    <!-- Adding Google Fonts -->
+   <!-- Adding Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+    <div class="container">
+        <!-- Logo and Heading -->
+        <div class="header">
+            <h1 class="logo">Coffee Bar</h1>
+            
+        </div>
+
+        <form class="coffee-form">
+            <div class="form-group">
+                <label for="roast-selection" class="label">Choose a roast:</label>
+                <select id="roast-selection" class="select">
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+            </div>
+            <input id="submit" type="submit" class="btn" value="Select Coffee Roast"/>
+        </form>
+
+        <table class="coffee-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>ROAST</th>
+                </tr>
+            </thead>
+            <tbody id="coffees"></tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
